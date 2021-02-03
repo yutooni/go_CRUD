@@ -1,6 +1,8 @@
 version: '3'
 services:
   go:
+    depends_on:
+      - "mysql"
     build:
       context: .
       dockerfile: DockerFile
